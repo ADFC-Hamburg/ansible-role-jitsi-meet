@@ -31,9 +31,6 @@ jitsi_meet_stun_servers:
 # Configure nginx and jitsi-meet to listening also IPv6
 jitsi_meet_ipv6_enable: true
 
-# Shall JitsiMeet contact gravatar.com
-jitsi_meet_disable_third_party_requests: true
-
 # It allows you to specify the installation of jitsi meet creating and configuring
 # self-signed HTTPS certificates, which can then be replaced by Let's Encrypt certificates
 jitsi_meet_cert_choice: "Generate a new self-signed certificate (You will later get a chance to obtain a Let's encrypt certificate)"

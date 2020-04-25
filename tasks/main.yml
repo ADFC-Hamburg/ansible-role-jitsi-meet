@@ -10,6 +10,8 @@
 
 - include: jicofo.yml
 
+- include: prosody.yml
+
 - include: sip_gateway.yml
   when: jitsi_meet_configure_sip_gateway  | bool
 

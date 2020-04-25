@@ -19,10 +19,11 @@ var config = {
         domain: '{{ jitsi_meet_server_name }}',
 
         // XMPP MUC domain. FIXME: use XEP-0030 to discover it.
-        muc: 'conference.{{ jitsi_meet_server_name }}'
+        muc: 'conference.{{ jitsi_meet_server_name }}',
 
         // When using authentication, domain for guest users.
-        // anonymousdomain: 'guest.example.com',
+
+        {% if jitsi_meet_authentication == 'anonymous' %}// {% endif %}anonymousdomain: 'guest.{{ jitsi_meet_server_name }}',
 
         // Domain for authenticated users. Defaults to <domain>.
         // authdomain: '{{ jitsi_meet_server_name }}',
