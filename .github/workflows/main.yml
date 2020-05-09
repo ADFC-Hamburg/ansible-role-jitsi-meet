@@ -12,7 +12,7 @@ jobs:
     # Machine environment:
     runs-on: ubuntu-18.04
 
-  steps:
+    steps:
     - name: install ansible-lint
       run: |
        pip install --upgrade setuptools wheel
