@@ -17,6 +17,12 @@ jobs:
       run: |
        pip install --upgrade setuptools wheel
        pip install ansible-lint
+    - name: install molecule
+      run: "pip install molecule"
+    - name: install severspec
+      run: "gem install serverspec"
     - uses: actions/checkout@v2
     - name: lint files
       run: ~/.local/bin/ansible-lint --nocolor -v .
+    - name: "run molecule"
+      run: ~/.local/bin/molecule test
